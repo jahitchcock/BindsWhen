@@ -143,7 +143,8 @@ hooksecurefunc("BankFrameItemButton_Update", function(button)
 	local text = not button.Count:IsShown() and GetBindText("player", button:GetInventorySlot())
 	SetItemButtonBindType(button, text)
 end)
-
+--[[
+--	Removing Addon support for now due to new Bag UI in Dragonflight
 ------------------------------------------------------------------------
 -- Addon support
 
@@ -375,3 +376,4 @@ tinsert(addons, function()
 		SetItemButtonBindType(button, text)
 	end)
 end)
+]]--
